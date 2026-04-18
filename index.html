@@ -1,0 +1,49 @@
+<!--Web Based Calculator using HTML, CSS & JavaScript-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Based Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div>
+            <h3>Web Calculator</h3>
+            <table>
+                <tr>
+                    <textarea id="answerarea">
+                    </textarea>
+                </tr>
+                <tr>
+                    <td><button onclick="myAppend('7')" id="num">7</button></td>
+                    <td><button onclick="myAppend('8')" id="num">8</button></td>
+                    <td><button onclick="myAppend('9')" id="num">9</button></td>
+                    <td><button style="background-color: lightgreen;" onclick="myAppend('^')" id="operator">^</button></td>
+                    <td><button style="background-color: lightgreen;" onclick="myAppend('%')" id="operator">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myAppend('4')" id="num">4</button></td>
+                    <td><button onclick="myAppend('5')" id="num">5</button></td>
+                    <td><button onclick="myAppend('6')" id="num">6</button></td>
+                    <td><button style="background-color: gainsboro;" onclick="myAppend('*')" id="operator">*</button></td>
+                    <td><button style="background-color: gainsboro;" onclick="myAppend('/')" id="operator">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myAppend('1')" id="num">1</button></td>
+                    <td><button onclick="myAppend('2')" id="num">2</button></td>
+                    <td><button onclick="myAppend('3')" id="num">3</button></td>
+                    <td><button style="background-color: gainsboro;" onclick="myAppend('-')" id="operator">-</button></td>
+                    <td rowspan="2">
+                        <button style="height: 100px; background-color: aqua;"onclick="calculate()" id="equals">=</button></td>
+                </tr>
+                <tr>
+                    <td><button style="background-color: burlywood;" onclick="clearAnswer()" id="clear">C</button></td>
+                    <td><button onclick="myAppend('0')" id="num">0</button></td>
+                    <td><button onclick="myAppend('.')" id="num">.</button></td>
+                    <td><button style="background-color: gainsboro;" onclick="myAppend('+')" id="operator">+</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html> 
